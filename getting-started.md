@@ -14,6 +14,7 @@ If you're deploying a cluster with kube-aws:
 
 * [EC2 instances whose types are larger than or equal to `t2.medium` should be chosen for the cluster to work reliably](https://github.com/kubernetes-incubator/kube-aws/issues/138)
 * [At least 3 etcd, 2 controller, 2 worker nodes are required to achieve high availability](https://github.com/kubernetes-incubator/kube-aws/issues/138#issuecomment-266432162)
+* If you wish to deploy to an existing VPC, there is additional information on [Use An Existing VPC](/use-an-existing-vpc.md) not covered by this getting started guide.
 
 Once you understand the pre-requisites, you are ready to launch your first Kubernetes cluster.
 
