@@ -14,7 +14,7 @@ When active, a kube-system Deployment schedules a single pod to take and upload 
 - Resources outside namespaces are grouped at the same directory level as the namespace folders
 - The backups are exported to the S3 URI: ```s3://<your-bucket-name>/.../<your-cluster-name>/backup/*```
 
-### Example
+# Example
 
 A Kubernetes environment has the namespaces:
  - kube-system
