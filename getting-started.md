@@ -24,99 +24,64 @@ Step 1 will cover:
 * Downloading kube-aws
 * Defining account and cluster settings
 
-Download kube-aws
+## Download kube-aws
 
-Go to the \[releases\]\([https://github.com/kubernetes-incubator/kube-aws/releases\](https://github.com/kubernetes-incubator/kube-aws/releases%29\) and download the latest release tarball for your architecture.
+Go to the [releases](https://github.com/kubernetes-incubator/kube-aws/releases) and download the latest release tarball for your architecture. Extract the binary:
 
-Extract the binary:
-
-\`\`\`sh
-
+```
 tar zxvf kube-aws-${PLATFORM}.tar.gz
-
-\`\`\`
+```
 
 Add kube-aws to your path:
 
-\`\`\`sh
-
+```
 mv ${PLATFORM}/kube-aws /usr/local/bin
+```
 
-\`\`\`
-
-\#\# Configure AWS credentials
+## Configure AWS credentials
 
 Configure your local workstation with AWS credentials using one of the following methods:
 
-\#\#\# Method 1: Configure command
+**Method 1: Configure command**
 
 Provide the values of your AWS access and secret keys, and optionally default region and output format:
 
-\`\`\`sh
-
+```
 $ aws configure
+AWS Access Key ID [None]: AKID1234567890
+AWS Secret Access Key [None]: MY-SECRET-KEY
+Default region name [None]: us-west-2
+Default output format [None]: text
+```
 
-AWS Access Key ID \[None\]: AKID1234567890
-
-AWS Secret Access Key \[None\]: MY-SECRET-KEY
-
-Default region name \[None\]: us-west-2
-
-Default output format \[None\]: text
-
-\`\`\`
-
-\#\#\# Method 2: Config file
+**Method 2: Config file**
 
 Write your credentials into the file \`~/.aws/credentials\` using the following template:
 
-\`\`\`
+```
+[default]
+aws_access_key_id = AKID1234567890
+aws_secret_access_key = MY-SECRET-KEY
+```
 
-\[default\]
-
-aws\_access\_key\_id = AKID1234567890
-
-aws\_secret\_access\_key = MY-SECRET-KEY
-
-\`\`\`
-
-\#\#\# Method 3: Environment variables
+**Method 3: Environment variables**
 
 Provide AWS credentials to kube-aws by exporting the following environment variables:
 
-\`\`\`sh
+```
+export AWS_ACCESS_KEY_ID=AKID1234567890
+export AWS_SECRET_ACCESS_KEY=MY-SECRET-KEY
+```
 
-export AWS\_ACCESS\_KEY\_ID=AKID1234567890
-
-export AWS\_SECRET\_ACCESS\_KEY=MY-SECRET-KEY
-
-\`\`\`
-
-\#\# Test Credentials
+## Test Credentials
 
 Test that your credentials work by describing any instances you may already have running on your account:
 
-\`\`\`sh
-
+```
 $ aws ec2 describe-instances
+```
 
-\`\`\`
-
-&lt;div class="co-m-docs-next-step"&gt;
-
-&lt;p&gt;&lt;strong&gt;Did you download kube-aws?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Did your credentials work?&lt;/strong&gt; We will use the AWS CLI in the next step.&lt;/p&gt;
-
-&lt;a href="kubernetes-on-aws-render.md" class="btn btn-primary btn-icon-right"  data-category="Docs Next" data-event="Kubernetes: AWS Render"&gt;Yes, ready to configure my cluster options&lt;/a&gt;
-
-&lt;a href="[https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)" class="btn btn-default btn-icon-right"  data-category="Docs Next" data-event="Configure AWS CLI"&gt;No, I need more info on the AWS CLI&lt;/a&gt;
-
-&lt;/div&gt;
-
-
-
-## Step 2: Render
+# Step 2: Render
 
 Step 2 will cover:
 
