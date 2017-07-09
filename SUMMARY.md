@@ -7,4 +7,5 @@
   * [Use An Existing VPC](use-an-existing-vpc.md)
   * [Cluster Resource Backup](cluster-resource-backup.md)
 * [Developer Guide](developer-guide.md)
+* [Known Limitation](known-limitation.md)
 
