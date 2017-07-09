@@ -1,8 +1,8 @@
-# Introduction
+# Introduction {#introduction}
 
 kube-aws is a command-line tool to create/update/destroy Kubernetes clusters on AWS.
 
-# Features
+# Features {#features}
 
 * Create, update and destroy Kubernetes clusters on AWS
 * Highly available and scalable Kubernetes clusters backed by multi-AZ deployment and Node Pools
