@@ -1,4 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [Home](README.md)
+* Getting Started
+* Network Topologies
 
