@@ -1,4 +1,4 @@
-# Getting Started
+# Quick Start
 
 Deploy a fully-functional Kubernetes cluster using AWS CloudFormation.
 

@@ -1,7 +1,7 @@
 # Summary
 
 * [Home](README.md)
-* [Getting Started](getting-started.md)
+* [Quick Start \(WIP\)](getting-started.md)
 * [Getting In Touch](getting-in-touch.md)
 * [Advanced Topics](advanced-topics/README.md)
   * [Use An Existing VPC](advanced-topics/use-an-existing-vpc.md)
