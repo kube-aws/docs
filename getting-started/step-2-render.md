@@ -162,12 +162,12 @@ At this point you should be ready to create your cluster. You can also now check
 Each component certificate is only valid for 90 days, while the CA is valid for 365 days.
 If deploying a production Kubernetes cluster, consider establishing PKI independently of this tool first. [Read more below.][tls-note]
 
-<div class="co-m-docs-next-step">
-  <p><strong>Did everything render correctly?</strong></p>
-  <p>If you are familiar with CoreOS and the AWS platform, you may want to include some additional customizations or optional features. Read on below to explore more.</p>
-  <a href="kubernetes-on-aws-launch.md" class="btn btn-primary btn-icon-right"  data-category="Docs Next" data-event="Kubernetes: AWS Launch">Yes, ready to launch the cluster</a>
-  <a href="kubernetes-on-aws-render.md#customizations-to-your-cluster" class="btn btn-link btn-icon-right"  data-category="Docs Next" data-event="Kubernetes: AWS Customizations">View optional features &amp; customizations</a>
-</div>
+**Did everything render correctly?**
+If you are familiar with CoreOS and the AWS platform, you may want to include some additional customizations or optional features. Read on below to explore more.
+
+[Yes, ready to launch the cluster][getting-started-step-3]
+
+[View optional features &amp; customizations](#customizations)
 
 ## Customizations to your cluster
 
