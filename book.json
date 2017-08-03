@@ -1,8 +1,5 @@
 {
-  "gitbook": "3.2.2",
-  "title": "Redux",
   "plugins": ["edit-link", "prism", "-highlight", "github", "anchorjs"],
-  "plugins": 
   "pluginsConfig": {
     "edit-link": {
       "base": "https://github.com/kube-aws/docs/tree/master",
