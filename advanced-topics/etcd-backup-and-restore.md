@@ -9,7 +9,7 @@ ssh into one of etcd nodes and run the following command:
 ```bash
 set -a; source /var/run/coreos/etcdadm-environment; set +a
 /opt/bin/etcdadm save
-``````
+```
 
 The command takes an etcd snapshot by running an appropriate `etcdctl snapshot save` command.
 The snapshot is then exported to the S3 URI: `s3://<your-bucket-name>/.../<your-cluster-name>/exported/etcd-snapshots/snapshot.db`.
