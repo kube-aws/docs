@@ -1,4 +1,4 @@
-# Kubernetes on AWS
+# Getting Started
 
 Deploy a fully-functional Kubernetes cluster using AWS CloudFormation. Your cluster will be configured to use AWS features to enhance Kubernetes. For example, Kubernetes may automatically provision an Elastic Load Balancer for each Kubernetes Service.
 
