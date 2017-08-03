@@ -5,7 +5,7 @@
   * [Step 1: Configure](getting-started/step-1-configure.md)
   * [Step 2: Render](getting-started/step-2-render.md)
   * [Step 3: Launch](getting-started/step-3-launch.md)
-  * Step 4: Update
+  * [Step 4: Update](getting-started/step-4-update.md)
   * Step 5: Add Node Pool
   * Step 6: Configure Add-ons
   * Step 7: Destroy
