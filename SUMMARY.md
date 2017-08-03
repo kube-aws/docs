@@ -6,8 +6,8 @@
   * [Step 2: Render](getting-started/step-2-render.md)
   * [Step 3: Launch](getting-started/step-3-launch.md)
   * [Step 4: Update](getting-started/step-4-update.md)
-  * Step 5: Add Node Pool
-  * Step 6: Configure Add-ons
+  * [Step 5: Add Node Pool](getting-started/step-5-add-node-pool.md)
+  * [Step 6: Configure Add-ons](getting-started/step-6-configure-add-ons.md)
   * Step 7: Destroy
 * [Getting In Touch](getting-in-touch.md)
 * [Advanced Topics](advanced-topics/README.md)
