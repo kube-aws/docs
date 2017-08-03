@@ -1,9 +1,4 @@
 # Advanced Topics
 
-These are optional features which can be enabled using kube-aws.
-
-* [etcd Backup & Restore](etcd-backup-and-restore.md)
-* [Cluster Resource Backup to AWS S3](cluster-resource-backup-to-s3.md) - automated backup and restore your Kubernetes resources to S3
-<!--* [Restore Kubernetes resources](/contrib/cluster-backup/README.md)-->
-* [Journald Logging to AWS CloudWatch](journald-logging-to-aws-cloudwatch.md) - stream journald logs into CloudWatch and also to some CLI commands such as `kube-aws up` and `kube-aws update`
+* [etcd Backup & Restore](etcd-backup-and-restore.md) - how to backup and restore etcd either manually or automatically
 * [CloudFormation Streaming](cloudformation-updates-in-cli.md) - stream CloudFormation updates during CLI commands `kube-aws up` and `kube-aws update`
