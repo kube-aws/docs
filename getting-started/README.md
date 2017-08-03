@@ -29,14 +29,6 @@ Each of the steps will cover:
   * Configure various Kubernetes add-ons
 * [Step 7: Destroy][getting-started-step-7]
   * Destroy the cluster
-* **Optional Features**
-  * [Backup and restore for etcd](../advanced-topics/etcd-backup-and-restore.md)
-  * [Backup Kubernetes resources](../advanced-topics/cluster-resource-backup.md)
-  * [Restore Kubernetes resources](/contrib/cluster-backup/README.md)
-  * [Journald logging to AWS CloudWatch](/Documentation/kubernetes-on-aws-journald-cloudwatch-logs.md)
-    * [kube-aws up/update feedback](/Documentation/kubernetes-on-aws-journald-cloudwatch-logs.md)
-  * [CloudFormation Streaming](/Documentation/kubernetes-on-aws-cloudformation-streaming.md)
-
 
 Let's get started with [Step 1](step-1-configure.md)!
 
