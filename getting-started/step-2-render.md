@@ -167,7 +167,7 @@ If you are familiar with CoreOS and the AWS platform, you may want to include so
 
 [Yes, ready to launch the cluster][getting-started-step-3]
 
-[View optional features &amp; customizations](#customizations)
+[View optional features &amp; customizations below](#customizations-to-your-cluster)
 
 ## Customizations to your cluster
 
