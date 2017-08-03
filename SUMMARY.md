@@ -14,6 +14,7 @@
 * [Guides](guides/README.md)
   * [Operator Guide](guides/operator-guide.md)
   * [Contributor Guide](guides/contributor-guide.md)
+* Add-ons
 * [Advanced Topics](advanced-topics/README.md)
   * [Use An Existing VPC](advanced-topics/use-an-existing-vpc.md)
   * [Cluster Resource Backup to AWS S3](advanced-topics/cluster-resource-backup-to-s3.md)
