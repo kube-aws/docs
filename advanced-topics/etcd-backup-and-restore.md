@@ -24,7 +24,7 @@ etcd:
 ``` 
 in `cluster.yaml`.
 
-When enabled, the command `etcdadm save` is called periodically(every 1 minute by default) via a systemd timer.
+When enabled, the command `etcdadm save` is called periodically (every 1 minute by default) via a systemd timer.
 
 ## Restore
 
