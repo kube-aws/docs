@@ -8,7 +8,7 @@
   * [Step 4: Update](getting-started/step-4-update.md)
   * [Step 5: Add Node Pool](getting-started/step-5-add-node-pool.md)
   * [Step 6: Configure Add-ons](getting-started/step-6-configure-add-ons.md)
-  * Step 7: Destroy
+  * [Step 7: Destroy](getting-started/step-7-destroy.md)
 * [Getting In Touch](getting-in-touch.md)
 * [Advanced Topics](advanced-topics/README.md)
   * [Use An Existing VPC](advanced-topics/use-an-existing-vpc.md)
