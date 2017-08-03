@@ -2,7 +2,7 @@
 
 * [Home](README.md)
 * [Getting Started](getting-started/README.md)
-  * [Getting Started Step 2: Render](getting-started/getting-started-step-2-render.md)
+  * [Step 2: Render](getting-started/getting-started-step-2-render.md)
 * [Getting In Touch](getting-in-touch.md)
 * [Advanced Topics](advanced-topics/README.md)
   * [Use An Existing VPC](advanced-topics/use-an-existing-vpc.md)
