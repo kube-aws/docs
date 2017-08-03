@@ -45,12 +45,12 @@ Fortunately, CoreOS update engine will take care of keeping the members of the e
 
 In the (near) future, etcd will be hosted on Kubernetes and this problem will no longer be relevant. Rather than concocting overly complex band-aid, we've decided to "punt" on this issue of the time being.
 
-Once you have successfully updated your cluster, you are ready to [add node pools to your cluster][aws-step-5].
+Once you have successfully updated your cluster, you are ready to [add node pools to your cluster][getting-started-step-5].
 
-[aws-step-1]: kubernetes-on-aws.md
-[aws-step-2]: kubernetes-on-aws-render.md
-[aws-step-3]: kubernetes-on-aws-launch.md
-[aws-step-4]: kube-aws-cluster-updates.md
-[aws-step-5]: kubernetes-on-aws-node-pool.md
-[aws-step-6]: kubernetes-on-aws-add-ons.md
-[aws-step-7]: kubernetes-on-aws-destroy.md
+[getting-started-step-1]: step-1-configure.md
+[getting-started-step-2]: step-2-render.md
+[getting-started-step-3]: step-3-launch.md
+[getting-started-step-4]: step-4-update.md
+[getting-started-step-5]: step-5-add-node-pool.md
+[getting-started-step-6]: step-6-configure-add-ons.md
+[getting-started-step-7]: step-7-destroy.md
