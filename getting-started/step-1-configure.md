@@ -32,11 +32,6 @@ Each of the steps will cover:
 
 Let's get started.
 
-## Announcement to regular users of kube-aws
-
-Older versions of kube-aws releases had been signed by the CoreOS key and were able to be verified with [CoreOS Application Signing Public Key](https://coreos.com/security/app-signing-key/).
-However, the signing process is postponed since v0.9.3. Please read the issue [#288](https://github.com/kubernetes-incubator/kube-aws/issues/288) for more information.
-
 ## Download kube-aws
 
 Go to the [releases](https://github.com/kubernetes-incubator/kube-aws/releases) and download the latest release tarball for your architecture.
