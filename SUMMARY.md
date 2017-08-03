@@ -8,6 +8,6 @@
   * [Cluster Resource Backup](advanced-topics/cluster-resource-backup.md)
 * Troubleshooting
   * [Known Limitations](known-limitations.md)
-  * Common Problems
+  * [Common Problems](common-problems.md)
 * [Developer Guide](developer-guide.md)
 
