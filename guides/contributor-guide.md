@@ -1,4 +1,16 @@
-# Build
+# Contributor Guide
+
+## Code of conduct
+
+Participation in the Kubernetes community is governed by the [Kubernetes Code of Conduct](https://github.com/kubernetes-incubator/kube-aws/blob/master/code-of-conduct.md).
+
+## How to Contribute
+
+Submit a PR to the [kube-aws repository](https://github.com/kubernetes-incubator/kube-aws/), following the [contributors guide](https://github.com/kubernetes-incubator/kube-aws/blob/master/CONTRIBUTING.md).
+
+# Developing kube-aws
+
+## Build
 
 Clone the [kube-aws repository](https://github.com/kubernetes-incubator/kube-aws) to the appropriate path under the GOPATH.
 
@@ -28,7 +40,7 @@ make test
 make format
 ```
 
-# Modifying Templates
+## Modifying Templates
 
 The various templates are located in the `core/controlplane/config/templates/` and the `core/nodepool/config/templates/` directory of the source repo. `go generate` is used to pack these templates into the source code. In order for changes to templates to be reflected in the source code:
 
