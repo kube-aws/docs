@@ -18,5 +18,6 @@
   * [Known Limitations](troubleshooting/known-limitations.md)
   * [Common Problems](troubleshooting/common-problems.md)
 * [Developer Guide](developer-guide.md)
+* [Operators Guide](operators-guide.md)
 * [Quick Start \(WIP\)](tutorials/quick-start.md)
 
