@@ -6,6 +6,8 @@
 * [Advanced Topics](advanced-topics/README.md)
   * [Use An Existing VPC](advanced-topics/use-an-existing-vpc.md)
   * [Cluster Resource Backup](advanced-topics/cluster-resource-backup.md)
+* Troubleshooting
+  * [Known Limitations](known-limitations.md)
+  * Common Problems
 * [Developer Guide](developer-guide.md)
-* [Known Limitations](known-limitations.md)
 
