@@ -2,7 +2,13 @@
 
 * [Home](README.md)
 * [Getting Started](getting-started/README.md)
+  * [Step 1: Configure](getting-started/step-1-configure.md)
   * [Step 2: Render](getting-started/getting-started-step-2-render.md)
+  * Step 3: Launch
+  * Step 4: Update
+  * Step 5: Add Node Pool
+  * Step 6: Configure Add-ons
+  * Step 7: Destroy
 * [Getting In Touch](getting-in-touch.md)
 * [Advanced Topics](advanced-topics/README.md)
   * [Use An Existing VPC](advanced-topics/use-an-existing-vpc.md)
