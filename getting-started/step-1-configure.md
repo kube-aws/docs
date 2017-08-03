@@ -62,6 +62,14 @@ $ aws ec2 describe-instances
 **Did you download kube-aws?**
 **Did your credentials work?** We will use the AWS CLI in the next step.
 
-[Yes, ready to configure my cluster options](step-2-render.md)
+[Yes, ready to configure my cluster options][getting-started-step-2]
 
 [No, I need more info on the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
+
+[getting-started-step-1]: step-1-configure.md
+[getting-started-step-2]: step-2-render.md
+[getting-started-step-3]: step-3-launch.md
+[getting-started-step-4]: step-4-update.md
+[getting-started-step-5]: step-5-add-node-pool.md
+[getting-started-step-6]: step-6-configure-add-ons.md
+[getting-started-step-7]: step-7-destroy.md

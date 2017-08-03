@@ -1,6 +1,6 @@
 # Configure your Kubernetes cluster on AWS
 
-This is the second step of [running Kubernetes on AWS](step-1-configure.md). Before we launch our cluster, let's define a few parameters that the cluster requires.
+This is the second step of [running Kubernetes on AWS](README.md). Before we launch our cluster, let's define a few parameters that the cluster requires.
 
 ## Cluster parameters
 
@@ -384,15 +384,15 @@ This is an important step to make sure your stack will launch successfully:
 $ kube-aws validate --s3-uri s3://<your-bucket-name>/<prefix>
 ```
 
-If your files are valid, you are ready to [launch your cluster][step-3-launch.md].
+If your files are valid, you are ready to [launch your cluster][getting-started-step-3].
 
-[aws-step-1]: kubernetes-on-aws.md
-[aws-step-2]: kubernetes-on-aws-render.md
-[aws-step-3]: kubernetes-on-aws-launch.md
-[aws-step-4]: kube-aws-cluster-updates.md
-[aws-step-5]: kubernetes-on-aws-node-pool.md
-[aws-step-6]: kubernetes-on-aws-add-ons.md
-[aws-step-7]: kubernetes-on-aws-destroy.md
+[getting-started-step-1]: step-1-configure.md
+[getting-started-step-2]: step-2-render.md
+[getting-started-step-3]: step-3-launch.md
+[getting-started-step-4]: step-4-update.md
+[getting-started-step-5]: step-5-add-node-pool.md
+[getting-started-step-6]: step-6-configure-add-ons.md
+[getting-started-step-7]: step-7-destroy.md
 [k8s-openssl]: openssl.md
 [tls-note]: #certificates-and-keys
 [route53]: https://aws.amazon.com/route53/
