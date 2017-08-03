@@ -12,22 +12,22 @@ Each of the steps will cover:
 * Step 1: Configure (this document)
   * Download the kube-aws CloudFormation generator
   * Define account and cluster settings
-* [Step 2: Render][aws-step-2]
+* [Step 2: Render][step-2-render]
   * Compile a re-usable CloudFormation template for the cluster
   * Optionally adjust template configuration
   * Validate the rendered CloudFormation stack
-* [Step 3: Launch][aws-step-3]
+* [Step 3: Launch][step-3-launch]
   * Create the CloudFormation stack and start our EC2 machines
   * Set up CLI access to the new cluster
-* [Step 4: Update][aws-step-4]
+* [Step 4: Update][step-4-update]
   * Update the CloudFormation stack
-* [Step 5: Add Node Pool][aws-step-5]
+* [Step 5: Add Node Pool][step-5-add-node-pool]
   * Create the additional pool of worker nodes
   * Adjust template configuration for each pool of worker nodes
   * Required to support [cluster-autoscaler](https://github.com/kubernetes/contrib/tree/master/cluster-autoscaler)
-* [Step 6: Configure add-ons][aws-step-6]
+* [Step 6: Configure add-ons][step-6-configure-add-ons]
   * Configure various Kubernetes add-ons
-* [Step 7: Destroy][aws-step-7]
+* [Step 7: Destroy][step-7-destroy]
   * Destroy the cluster
 
 Let's get started.
