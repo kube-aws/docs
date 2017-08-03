@@ -351,7 +351,7 @@ This includes the certificate authority, signed server certificates for the Kube
     - kubernetes.default
     - kubernetes.default.svc
     - kubernetes.default.svc.cluster.local
-  <br/><br/>
+
 
 * **WorkerCert, WorkerKey**
 
@@ -384,7 +384,7 @@ This is an important step to make sure your stack will launch successfully:
 $ kube-aws validate --s3-uri s3://<your-bucket-name>/<prefix>
 ```
 
-If your files are valid, you are ready to [launch your cluster][aws-step-3].
+If your files are valid, you are ready to [launch your cluster][step-3-launch.md].
 
 [aws-step-1]: kubernetes-on-aws.md
 [aws-step-2]: kubernetes-on-aws-render.md
