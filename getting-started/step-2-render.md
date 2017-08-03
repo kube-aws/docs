@@ -1,6 +1,6 @@
 # Configure your Kubernetes cluster on AWS
 
-This is the second step of [running Kubernetes on AWS][aws-step-1]. Before we launch our cluster, let's define a few parameters that the cluster requires.
+This is the second step of [running Kubernetes on AWS](step-1-configure.md). Before we launch our cluster, let's define a few parameters that the cluster requires.
 
 ## Cluster parameters
 

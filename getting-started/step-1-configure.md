@@ -1,36 +1,4 @@
-# Kubernetes on AWS
-
-Deploy a fully-functional Kubernetes cluster using AWS CloudFormation.
-Your cluster will be configured to use AWS features to enhance Kubernetes.
-For example, Kubernetes may automatically provision an Elastic Load Balancer for each Kubernetes Service.
-At CoreOS, we use the [kube-aws](https://github.com/kubernetes-incubator/kube-aws/releases) CLI tool to automate cluster deployment to AWS.
-
-After completing this guide, a deployer will be able to interact with the Kubernetes API from their workstation using the `kubectl` CLI tool.
-
-Each of the steps will cover:
-
-* Step 1: Configure (this document)
-  * Download the kube-aws CloudFormation generator
-  * Define account and cluster settings
-* [Step 2: Render][step-2-render]
-  * Compile a re-usable CloudFormation template for the cluster
-  * Optionally adjust template configuration
-  * Validate the rendered CloudFormation stack
-* [Step 3: Launch][step-3-launch]
-  * Create the CloudFormation stack and start our EC2 machines
-  * Set up CLI access to the new cluster
-* [Step 4: Update][step-4-update]
-  * Update the CloudFormation stack
-* [Step 5: Add Node Pool][step-5-add-node-pool]
-  * Create the additional pool of worker nodes
-  * Adjust template configuration for each pool of worker nodes
-  * Required to support [cluster-autoscaler](https://github.com/kubernetes/contrib/tree/master/cluster-autoscaler)
-* [Step 6: Configure add-ons][step-6-configure-add-ons]
-  * Configure various Kubernetes add-ons
-* [Step 7: Destroy][step-7-destroy]
-  * Destroy the cluster
-
-Let's get started.
+# Configure
 
 ## Download kube-aws
 
@@ -91,17 +59,9 @@ Test that your credentials work by describing any instances you may already have
 $ aws ec2 describe-instances
 ```
 
-<div class="co-m-docs-next-step">
-  <p><strong>Did you download kube-aws?</strong></p>
-  <p><strong>Did your credentials work?</strong> We will use the AWS CLI in the next step.</p>
-  <a href="kubernetes-on-aws-render.md" class="btn btn-primary btn-icon-right"  data-category="Docs Next" data-event="Kubernetes: AWS Render">Yes, ready to configure my cluster options</a>
-  <a href="https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html" class="btn btn-default btn-icon-right"  data-category="Docs Next" data-event="Configure AWS CLI">No, I need more info on the AWS CLI</a>
-</div>
+**Did you download kube-aws?**
+**Did your credentials work?** We will use the AWS CLI in the next step.
 
-[aws-step-1]: kubernetes-on-aws.md
-[aws-step-2]: kubernetes-on-aws-render.md
-[aws-step-3]: kubernetes-on-aws-launch.md
-[aws-step-4]: kube-aws-cluster-updates.md
-[aws-step-5]: kubernetes-on-aws-node-pool.md
-[aws-step-6]: kubernetes-on-aws-add-ons.md
-[aws-step-7]: kubernetes-on-aws-destroy.md
+[Yes, ready to configure my cluster options](step-2-render.md)
+
+[No, I need more info on the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
