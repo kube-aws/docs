@@ -29,18 +29,9 @@ Each of the steps will cover:
   * Configure various Kubernetes add-ons
 * [Step 7: Destroy][getting-started-step-7]
   * Destroy the cluster
-
-
-
-* Adjust template configuration for each pool of worker nodes
-  * Required to support [cluster-autoscaler](https://github.com/kubernetes/contrib/tree/master/cluster-autoscaler)
-* [Step 6: Configure add-ons](/Documentation/kubernetes-on-aws-add-ons.md)
-  * Configure various Kubernetes add-ons
-* [Step 7: Destroy](/Documentation/kubernetes-on-aws-destroy.md)
-  * Destroy the cluster
 * **Optional Features**
-  * [Backup and restore for etcd](/Documentation/kubernetes-on-aws-backup-and-restore-for-etcd.md)
-  * [Backup Kubernetes resources](/Documentation/kubernetes-on-aws-backup.md)
+  * [Backup and restore for etcd](../advanced-topics/etcd-backup-and-restore.md)
+  * [Backup Kubernetes resources](../advanced-topics/cluster-resource-backup.md)
   * [Restore Kubernetes resources](/contrib/cluster-backup/README.md)
   * [Journald logging to AWS CloudWatch](/Documentation/kubernetes-on-aws-journald-cloudwatch-logs.md)
     * [kube-aws up/update feedback](/Documentation/kubernetes-on-aws-journald-cloudwatch-logs.md)
