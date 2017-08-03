@@ -10,7 +10,7 @@
   * [Step 6: Configure Add-ons](getting-started/step-6-configure-add-ons.md)
   * [Step 7: Destroy](getting-started/step-7-destroy.md)
 * [Getting In Touch](getting-in-touch.md)
-* [Guides](guides.md)
+* [Guides](guides/README.md)
   * [Operator Guide](guides/operator-guide.md)
   * [Contributor Guide](guides/contributor-guide.md)
 * [Advanced Topics](advanced-topics/README.md)
