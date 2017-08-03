@@ -10,6 +10,7 @@
   * [Step 6: Configure Add-ons](getting-started/step-6-configure-add-ons.md)
   * [Step 7: Destroy](getting-started/step-7-destroy.md)
 * [Getting In Touch](getting-in-touch.md)
+* [Operator Guide](operator-guide.md)
 * [Advanced Topics](advanced-topics/README.md)
   * [Use An Existing VPC](advanced-topics/use-an-existing-vpc.md)
   * [Cluster Resource Backup](advanced-topics/cluster-resource-backup.md)
@@ -17,7 +18,6 @@
 * [Troubleshooting](troubleshooting/README.md)
   * [Known Limitations](troubleshooting/known-limitations.md)
   * [Common Problems](troubleshooting/common-problems.md)
-* [Developer Guide](developer-guide.md)
-* [Operator Guide](operator-guide.md)
+* [Contributor Guide](developer-guide.md)
 * [Quick Start \(WIP\)](tutorials/quick-start.md)
 
