@@ -18,6 +18,7 @@
   * [Use An Existing VPC](advanced-topics/use-an-existing-vpc.md)
   * [Cluster Resource Backup](advanced-topics/cluster-resource-backup.md)
   * [etcd Backup & Restore](advanced-topics/etcd-backup-and-restore.md)
+  * [Journald Logging to AWS CloudWatch](advanced-topics/journald-logging-to-aws-cloudwatch.md)
 * [Troubleshooting](troubleshooting/README.md)
   * [Known Limitations](troubleshooting/known-limitations.md)
   * [Common Problems](troubleshooting/common-problems.md)
