@@ -8,8 +8,9 @@ After completing this guide, a deployer will be able to interact with the Kubern
 
 Each of the steps will cover:
 
+* [Pre-requisites][getting-started-prerequisites.md]
 * [Step 1: Configure][getting-started-step-1]
-  * Download the kube-aws CloudFormation generator
+  * Download the latest release of kube-aws
   * Define account and cluster settings
 * [Step 2: Render][getting-started-step-2]
   * Compile a re-usable CloudFormation template for the cluster
@@ -29,8 +30,26 @@ Each of the steps will cover:
 * [Step 7: Destroy][getting-started-step-7]
   * Destroy the cluster
 
+
+
+* Adjust template configuration for each pool of worker nodes
+  * Required to support [cluster-autoscaler](https://github.com/kubernetes/contrib/tree/master/cluster-autoscaler)
+* [Step 6: Configure add-ons](/Documentation/kubernetes-on-aws-add-ons.md)
+  * Configure various Kubernetes add-ons
+* [Step 7: Destroy](/Documentation/kubernetes-on-aws-destroy.md)
+  * Destroy the cluster
+* **Optional Features**
+  * [Backup and restore for etcd](/Documentation/kubernetes-on-aws-backup-and-restore-for-etcd.md)
+  * [Backup Kubernetes resources](/Documentation/kubernetes-on-aws-backup.md)
+  * [Restore Kubernetes resources](/contrib/cluster-backup/README.md)
+  * [Journald logging to AWS CloudWatch](/Documentation/kubernetes-on-aws-journald-cloudwatch-logs.md)
+    * [kube-aws up/update feedback](/Documentation/kubernetes-on-aws-journald-cloudwatch-logs.md)
+  * [CloudFormation Streaming](/Documentation/kubernetes-on-aws-cloudformation-streaming.md)
+
+
 Let's get started with [Step 1](step-1-configure.md)!
 
+[getting-started-prerequisites.md]: prerequisites.md
 [getting-started-step-1]: step-1-configure.md
 [getting-started-step-2]: step-2-render.md
 [getting-started-step-3]: step-3-launch.md

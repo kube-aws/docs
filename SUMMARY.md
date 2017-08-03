@@ -2,6 +2,7 @@
 
 * [Home](README.md)
 * [Getting Started](getting-started/README.md)
+  * [Prerequisites](getting-started/prerequisites.md)
   * [Step 1: Configure](getting-started/step-1-configure.md)
   * [Step 2: Render](getting-started/step-2-render.md)
   * [Step 3: Launch](getting-started/step-3-launch.md)
