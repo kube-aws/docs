@@ -13,6 +13,14 @@ Once you are familiar with the basic setup, the sections [Add-Ons](add-ons/READM
 * Deployment to an existing VPC
 * Powered by various AWS services including CloudFormation, KMS, Auto Scaling, Spot Fleet, EC2, ELB, S3, etc
 
+# Kubernetes Incubator
+
+kube-aws is a [Kubernetes Incubator project](https://github.com/kubernetes/community/blob/master/incubator.md). The project was established 2017-03-15. The incubator team for the project is:
+
+- Sponsor: Tim Hockin (@thockin)
+- Champion: Mike Danese (@mikedanese)
+- SIG: sig-aws
+
 # Announcements
 
 Older releases of kube-aws had been signed by the CoreOS key and were verifiable with the [CoreOS Application Signing Public Key](https://coreos.com/security/app-signing-key/). However, the signing process has been postponed since v0.9.3. Please read the [issue \#288](https://github.com/kubernetes-incubator/kube-aws/issues/288) for more information.
