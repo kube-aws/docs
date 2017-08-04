@@ -16,13 +16,13 @@ The snapshot is then exported to the S3 URI: `s3://<your-bucket-name>/.../<your-
 
 ### Automatically taking an etcd snapshot
 
-A feature to periodically take a snapshot of an etcd cluster can be enabled by specifying: 
+A feature to periodically take a snapshot of an etcd cluster can be enabled by specifying the following in `cluster.yaml`:
+
 ```yaml
 etcd:
   snapshot:
     automated: true
-``` 
-in `cluster.yaml`.
+```
 
 When enabled, the command `etcdadm save` is called periodically (every 1 minute by default) via a systemd timer.
 
