@@ -8,16 +8,16 @@ The default docker image *[jollinshead/journald-cloudwatch-logs](https://hub.doc
 
 This feature is disabled by default and configurable in cluster.yaml:
 
-```
+```yaml
 cloudWatchLogging:
- enabled: false
- retentionInDays: 7
+  enabled: false
+  retentionInDays: 7
 ```
 
 
 The docker image is also configurable:
 
-```
+```yaml
 journaldCloudWatchLogsImage:
   repo: "jollinshead/journald-cloudwatch-logs"
   tag: "0.1"
@@ -41,15 +41,15 @@ For example:
 This feature is configurable in cluster.yaml under the *cloudWatchLogging* section, and requires *cloudWatchLogging* to be enabled.
 ( Default values: )
 
-```
+```yaml
 cloudWatchLogging:
- enabled: false
- imageWithTag: jollinshead/journald-cloudwatch-logs:0.1
- retentionInDays: 7
- localStreaming:
-  enabled: true
-  filter:  `{ $.priority = "CRIT" || $.priority = "WARNING" && $.transport = "journal" && $.systemdUnit = "init.scope" }`
-  interval: 60
+  enabled: false
+  imageWithTag: jollinshead/journald-cloudwatch-logs:0.1
+  retentionInDays: 7
+  localStreaming:
+    enabled: true
+    filter:  `{ $.priority = "CRIT" || $.priority = "WARNING" && $.transport = "journal" && $.systemdUnit = "init.scope" }`
+    interval: 60
 ```
 
 NOTE: Due to high initial entropy, *.service* failures may occur during the early stages of booting.
