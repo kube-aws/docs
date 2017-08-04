@@ -65,14 +65,14 @@ KUBE_AWS_CLUSTER_NAME=${CLUSTER_NAME} ./run all
 
 The `FOCUS` environment variable can be used if you wish to target a particular test or set of e2e tests. For example to target the e2e tests for the rescheduler:
 
-```
+```bash
 export FOCUS=.*Rescheduler.*
 ```
 
 
 ## Reformat Code
 
-```
+```bash
 make format
 ```
 
@@ -80,7 +80,7 @@ make format
 
 The various templates are located in the `core/controlplane/config/templates/` and the `core/nodepool/config/templates/` directory of the source repo. `go generate` is used to pack these templates into the source code. In order for changes to templates to be reflected in the source code:
 
-```
+```bash
 make build
 ```
 
