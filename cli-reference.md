@@ -66,38 +66,13 @@ $ kube-aws render stack
 ```
 
 # `validate`
+
+Validate cluster assets prior to deployment.
+
 | Flag | Description | Default |
 | -- | -- | -- |
-Validate cluster assets
-
-		Short:        "Validate cluster assets",
-		Long:         ``,
-		RunE:         runCmdValidate,
-		SilenceUsage: true,
-	}
-
-	validateOpts = struct {
-		awsDebug bool
-		skipWait bool
-		s3URI    string
-	}{}
-)
-
-func init() {
-	RootCmd.AddCommand(cmdValidate)
-	cmdValidate.Flags().BoolVar(
-		&validateOpts.awsDebug,
-		"aws-debug",
-		false,
-		"Log debug information from aws-sdk-go library",
-	)
-	cmdValidate.Flags().StringVar(
-		&validateOpts.s3URI,
-		"s3-uri",
-		"",
-		"When your template is bigger than the cloudformation limit of 51200 bytes, upload the template to the specified location in S3. S3 location expressed as s3://<bucket>/path/to/dir",
-	)
-}
+| `aws-debug` | Log debug information coming from the AWS SDK library | `false` |
+| `s3-uri` | When your template is bigger than the [CloudFormation limit of 51,200 bytes](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cloudformation-limits.html), kube-aws needs to upload the template to S3 to perform the deploy. The S3 location expressed as `s3://<bucket>/path/to/dir`. Multiple clusters can use the same S3 bucket. | none |
 
 ## `validate` example
 
