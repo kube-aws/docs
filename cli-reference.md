@@ -23,7 +23,7 @@ Initialize the base configuration for a cluster ready for customization prior to
 | `kms-key-arn` | The ARN of the AWS KMS key for encrypting TLS assets |
 | `region` | The AWS region to deploy to | none |
 
-## `init` example
+### `init` example
 
 ```bash
 $ kube-aws init \
