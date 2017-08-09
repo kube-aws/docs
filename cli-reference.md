@@ -12,7 +12,7 @@ AWS_PROFILE=your-profile-name kube-aws init ...
 
 Initialize the base configuration for a cluster ready for customization prior to deployment.
 
-| Parameter | Description | Default |
+| Flag | Description | Default |
 | -- | -- | -- |
 | `ami-id` | The AMI ID of CoreOS Container Linux to deploy | The latest AMI for the Container Linux release channel specified in `cluster.yaml` |
 | `availability-zone` | The AWS availability-zone to deploy to. Note, this can be changed to multi AZ in `cluster.yaml` | none |
@@ -26,7 +26,7 @@ Initialize the base configuration for a cluster ready for customization prior to
 ## `init` example
 
 ```bash
-kube-aws init \
+$ kube-aws init \
   --cluster-name=my-cluster \
   --external-dns-name=my-cluster-endpoint.mydomain.com \
   --region=us-west-1 \
@@ -39,7 +39,7 @@ kube-aws init \
 
 Render TLS credentials required for cluster administration and communication between cluster nodes.
 
-| Parameter | Description | Default |
+| Flag | Description | Default |
 | -- | -- | -- |
 | `ca-cert-path` | Path to pem-encoded CA x509 certificate | `./credentials/ca.pem` |
 | `ca-key-path` | Path to pem-encoded CA RSA key | `./credentials/ca-key.pem` |
@@ -57,13 +57,54 @@ $ kube-aws render credentials \
 
 Render [CloudFormation](https://aws.amazon.com/cloudformation/) stack templates and [coreos-cloudinit](https://github.com/coreos/coreos-cloudinit) userdata ready for customization prior to deployment.
 
-| Parameter | Description | Default |
-| -- | -- | -- |
-
+`render stack` has no CLI flags.
 
 ## `render stack` example
 
+```bash
+$ kube-aws render stack
+```
+
 # `validate`
+| Flag | Description | Default |
+| -- | -- | -- |
+Validate cluster assets
+
+		Short:        "Validate cluster assets",
+		Long:         ``,
+		RunE:         runCmdValidate,
+		SilenceUsage: true,
+	}
+
+	validateOpts = struct {
+		awsDebug bool
+		skipWait bool
+		s3URI    string
+	}{}
+)
+
+func init() {
+	RootCmd.AddCommand(cmdValidate)
+	cmdValidate.Flags().BoolVar(
+		&validateOpts.awsDebug,
+		"aws-debug",
+		false,
+		"Log debug information from aws-sdk-go library",
+	)
+	cmdValidate.Flags().StringVar(
+		&validateOpts.s3URI,
+		"s3-uri",
+		"",
+		"When your template is bigger than the cloudformation limit of 51200 bytes, upload the template to the specified location in S3. S3 location expressed as s3://<bucket>/path/to/dir",
+	)
+}
+
+## `validate` example
+
+```bash
+$ kube-aws validate \
+  --s3-uri=s3://my-kube-aws-assets-bucket
+```
 
 # `up`
 
