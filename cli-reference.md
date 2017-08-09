@@ -83,30 +83,15 @@ $ kube-aws validate \
 
 # `up`
 
+Deploy a new Kubernetes cluster.
 
-	cmdUp = &cobra.Command{
-		Use:          "up",
-		Short:        "Create a new Kubernetes cluster",
-		Long:         ``,
-		RunE:         runCmdUp,
-		SilenceUsage: true,
-	}
-
-	upOpts = struct {
-		awsDebug, export, prettyPrint, skipWait bool
-		s3URI                                   string
-	}{}
-)
-
-func init() {
-	RootCmd.AddCommand(cmdUp)
-	cmdUp.Flags().BoolVar(&upOpts.export, "export", false, "Don't create cluster, instead export cloudformation stack file")
-	cmdUp.Flags().BoolVar(&upOpts.prettyPrint, "pretty-print", false, "Pretty print the resulting CloudFormation")
-	cmdUp.Flags().BoolVar(&upOpts.awsDebug, "aws-debug", false, "Log debug information from aws-sdk-go library")
-	cmdUp.Flags().StringVar(&upOpts.s3URI, "s3-uri", "", "When your template is bigger than the cloudformation limit of 51200 bytes, upload the template to the specified location in S3. S3 location expressed as s3://<bucket>/path/to/dir")
-	cmdUp.Flags().BoolVar(&upOpts.skipWait, "skip-wait", false, "Don't wait for the cluster components be ready")
-}
-
+| Flag | Description | Default |
+| -- | -- | -- |
+| `aws-debug` | Log debug information coming from the AWS SDK library | `false` |
+| `export` | Do not create cluster, instead export the CloudFormation stack file | `false` |
+| `pretty-print` | Pretty print the resulting CloudFormation | `false` |
+| `s3-uri` | When your template is bigger than the [CloudFormation limit of 51,200 bytes](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cloudformation-limits.html), kube-aws needs to upload the template to S3 to perform the deploy. The S3 location expressed as `s3://<bucket>/path/to/dir`. Multiple clusters can use the same S3 bucket. | none |
+| `skip-wait` | Do not wait for the cluster components be ready | `false` |
 
 # `update`
 
