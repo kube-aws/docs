@@ -96,7 +96,7 @@ Deploy a new Kubernetes cluster.
 ## `up` example
 
 ```bash
-$ kube-aws up --s3-uri \
+$ kube-aws up \
   --s3-uri=s3://my-kube-aws-assets-bucket
 ```
 
