@@ -93,6 +93,13 @@ Deploy a new Kubernetes cluster.
 | `s3-uri` | When your template is bigger than the [CloudFormation limit of 51,200 bytes](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cloudformation-limits.html), kube-aws needs to upload the template to S3 to perform the deploy. The S3 location expressed as `s3://<bucket>/path/to/dir`. Multiple clusters can use the same S3 bucket. | none |
 | `skip-wait` | Do not wait for the cluster components be ready | `false` |
 
+## `up` example
+
+```bash
+$ kube-aws up --s3-uri \
+  --s3-uri=s3://my-kube-aws-assets-bucket
+```
+
 # `update`
 
 # `destroy`
