@@ -23,6 +23,12 @@ export AWS_ACCESS_KEY_ID=AKID1234567890
 export AWS_SECRET_ACCESS_KEY=MY-SECRET-KEY
 ```
 
+Alternatively, you can provide a AWS profile to kube-aws via the `AWS_PROFILE` environment variable such as:
+
+```
+AWS_PROFILE=my-profile-name kube-aws init ...
+```
+
 ### Multi-Factor Authentication (MFA)
 
 If you are using MFA, you need to export the Session Token as well:
@@ -30,6 +36,3 @@ If you are using MFA, you need to export the Session Token as well:
 ```bash
 export AWS_SESSION_TOKEN=MY-SESSION-TOKEN
 ```
-
-
-Method 3: Environment variables
