@@ -10,6 +10,8 @@ AWS_PROFILE=your-profile-name kube-aws init ...
 
 # `init`
 
+Initialize the base configuration for a cluster ready for customization prior to deployment.
+
 | Parameter | Description | Default |
 | -- | -- | -- |
 | `ami-id` | The AMI ID of CoreOS Container Linux to deploy | The latest AMI for the Container Linux release channel specified in `cluster.yaml` |
@@ -35,6 +37,8 @@ kube-aws init \
 
 # `render credentials`
 
+Render TLS credentials required for cluster administration and communication between cluster nodes.
+
 | Parameter | Description | Default |
 | -- | -- | -- |
 | `ca-cert-path` | Path to pem-encoded CA x509 certificate | `./credentials/ca.pem` |
@@ -48,3 +52,21 @@ $ kube-aws render credentials \
   --ca-cert-path=/path/to/ca-cert.pem
   --ca-key-path=/path/to/ca-key.pem
 ```
+
+# `render stack`
+
+Render [CloudFormation](https://aws.amazon.com/cloudformation/) stack templates and [coreos-cloudinit](https://github.com/coreos/coreos-cloudinit) userdata ready for customization prior to deployment.
+
+| Parameter | Description | Default |
+| -- | -- | -- |
+
+
+## `render stack` example
+
+# `validate`
+
+# `up`
+
+# `update`
+
+# `destroy`
