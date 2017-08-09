@@ -11,48 +11,39 @@ AWS_PROFILE=your-profile-name kube-aws init ...
 # `init`
 
 | Parameter | Description | Default |
-| `--availability-zone` | The AWS availability-zone to deploy to. Note, this can be changed to multi AZ in `cluster.yaml` | none |
-| `--cluster-name` | The name of this cluster. This will be the name of the cloudformation stack | none |
-| `--external-dns-name` | The hostname that will route to the api server | none |
+| `ami-id` | The AMI ID of CoreOS Container Linux to deploy | The latest AMI for the Container Linux release channel specified in `cluster.yaml` |
+| `availability-zone` | The AWS availability-zone to deploy to. Note, this can be changed to multi AZ in `cluster.yaml` | none |
+| `cluster-name` | The name of this cluster. This will be the name of the cloudformation stack | none |
+| `external-dns-name` | The hostname that will route to the api server | none |
 | `hosted-zone-id` | The hosted zone in which a Route53 record set for a k8s API endpoint is created | none |
-| `--key-name` | The AWS key-pair for SSH access to nodes | none |
-| `--kms-key-arn` | The ARN of the AWS KMS key for encrypting TLS assets |
-| `--region` | The AWS region to deploy to | none |
+| `key-name` | The AWS key-pair for SSH access to nodes | none |
+| `kms-key-arn` | The ARN of the AWS KMS key for encrypting TLS assets |
+| `region` | The AWS region to deploy to | none |
 
+## `init` example
 
-
---availability-zone=us-west-1c \
---key-name=key-pair-name \
---kms-key-arn="arn:aws:kms:us-west-1:xxxxxxxxxx:key/xxxxxxxxxxxxxxxxxxx"
-
-
-
-	cmdInit.Flags().StringVar(&initOpts.KeyName, "", "", "")
-	cmdInit.Flags().StringVar(&initOpts.KMSKeyARN, "
-	cmdInit.Flags().StringVar(&initOpts.AmiId, "ami-id", "", "The AMI ID of CoreOS")
-}
-
-
-
-Here `us-west-1c` is used for parameter `--availability-zone`, but supported availability zone varies among AWS accounts.
-Please check if `us-west-1c` is supported by `aws ec2 --region us-west-1 describe-availability-zones`, if not switch to other supported availability zone. (e.g., `us-west-1a`, or `us-west-1b`)
-
-There will now be a `cluster.yaml` file in the asset directory. This is the main configuration file for your cluster.
-
-### Render contents of the asset directory
-
-#### TLS certificates
-
-* In the simplest case, you can have kube-aws generate both your TLS identities and certificate authority for you.
-
-```sh
-$ kube-aws render credentials --generate-ca
+```bash
+kube-aws init \
+  --cluster-name=my-cluster \
+  --external-dns-name=my-cluster-endpoint.mydomain.com \
+  --region=us-west-1 \
+  --availability-zone=us-west-1c \
+  --key-name=key-pair-name \
+  --kms-key-arn="arn:aws:kms:us-west-1:xxxxxxxxxx:key/xxxxxxxxxxxxxxxxxxx"
 ```
 
-This is not recommended for production, but is fine for development or testing purposes.
+# `render credentials`
 
-* It is recommended that you supply your own immediate certificate signing authority and let kube-aws take care of generating the cluster TLS credentials.
+| Parameter | Description | Default |
+| `ca-cert-path` | Path to pem-encoded CA x509 certificate | `./credentials/ca.pem` |
+| `ca-key-path` | Path to pem-encoded CA RSA key | `./credentials/ca-key.pem` |
+| `generate-ca` | If generating credentials, generate root CA key and cert. **NOT RECOMMENDED FOR PRODUCTION USE** - use `-ca-key-path` and `-ca-cert-path` options to provide your own certificate authority assets. | `false` |
 
-```sh
-$ kube-aws render credentials --ca-cert-path=/path/to/ca-cert.pem --ca-key-path=/path/to/ca-key.pem
+	cmdRenderCredentials.Flags().StringVar(&renderCredentialsOpts.CaKeyPath, "ca-key-path", "./credentials/ca-key.pem", "path to pem-encoded CA RSA	
+## `render credentials` example
+
+```bash
+$ kube-aws render credentials \
+  --ca-cert-path=/path/to/ca-cert.pem
+  --ca-key-path=/path/to/ca-key.pem
 ```
