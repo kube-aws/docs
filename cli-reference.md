@@ -11,6 +11,7 @@ AWS_PROFILE=your-profile-name kube-aws init ...
 # `init`
 
 | Parameter | Description | Default |
+| -- | -- | -- |
 | `ami-id` | The AMI ID of CoreOS Container Linux to deploy | The latest AMI for the Container Linux release channel specified in `cluster.yaml` |
 | `availability-zone` | The AWS availability-zone to deploy to. Note, this can be changed to multi AZ in `cluster.yaml` | none |
 | `cluster-name` | The name of this cluster. This will be the name of the cloudformation stack | none |
@@ -35,9 +36,10 @@ kube-aws init \
 # `render credentials`
 
 | Parameter | Description | Default |
+| -- | -- | -- |
 | `ca-cert-path` | Path to pem-encoded CA x509 certificate | `./credentials/ca.pem` |
 | `ca-key-path` | Path to pem-encoded CA RSA key | `./credentials/ca-key.pem` |
-| `generate-ca` | If generating credentials, generate root CA key and cert. **NOT RECOMMENDED FOR PRODUCTION USE** - use `-ca-key-path` and `-ca-cert-path` options to provide your own certificate authority assets. | `false` |
+| `generate-ca` | If generating credentials, generate root CA key and cert. **NOT RECOMMENDED FOR PRODUCTION USE**, use `-ca-key-path` and `-ca-cert-path` options to provide your own certificate authority assets. | `false` |
 
 ## `render credentials` example
 
