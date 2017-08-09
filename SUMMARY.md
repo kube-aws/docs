@@ -12,6 +12,7 @@
   * [Step 7: Destroy](getting-started/step-7-destroy.md)
 * [Getting In Touch](getting-in-touch.md)
 * [CLI Reference](cli-reference.md)
+  * [AWS Credentials](cli-reference/aws-credentials.md)
 * [Add-ons](add-ons/README.md)
   * [Cluster Resource Backup to AWS S3](add-ons/cluster-resource-backup-to-s3.md)
   * [Journald Logging to AWS CloudWatch](add-ons/journald-logging-to-cloudwatch.md)

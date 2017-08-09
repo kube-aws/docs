@@ -1,13 +1,5 @@
 # CLI Reference
 
-# AWS Credentials
-
-You can provide a AWS profile to kube-aws via the `AWS_PROFILE` environment variable such as:
-
-```
-AWS_PROFILE=my-profile-name kube-aws init ...
-```
-
 # `init`
 
 Initialize the base configuration for a cluster ready for customization prior to deployment.
