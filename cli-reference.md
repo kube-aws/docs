@@ -5,7 +5,7 @@
 You can provide a AWS profile to kube-aws via the `AWS_PROFILE` environment variable such as:
 
 ```
-AWS_PROFILE=your-profile-name kube-aws init ...
+AWS_PROFILE=my-profile-name kube-aws init ...
 ```
 
 # `init`
@@ -89,9 +89,9 @@ Deploy a new Kubernetes cluster.
 | -- | -- | -- |
 | `aws-debug` | Log debug information coming from the AWS SDK library | `false` |
 | `export` | Do not create cluster, instead export the CloudFormation stack file | `false` |
-| `pretty-print` | Pretty print the resulting CloudFormation. Generally useful in conjunction with the `export` flag. | `false` |
+| `pretty-print` | Pretty print the resulting CloudFormation | `false` |
 | `s3-uri` | When your template is bigger than the [CloudFormation limit of 51,200 bytes](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cloudformation-limits.html), kube-aws needs to upload the template to S3 to perform the deploy. The S3 location expressed as `s3://<bucket>/path/to/dir`. Multiple clusters can use the same S3 bucket. | none |
-| `skip-wait` | Do not wait for the cluster components be ready | `false` |
+| `skip-wait` | Do not wait for the cluster components be ready before the CLI exits | `false` |
 
 ## `up` example
 
@@ -102,8 +102,14 @@ $ kube-aws up \
 
 # `update`
 
+Update an existing Kubernetes cluster.
+
 | Flag | Description | Default |
 | -- | -- | -- |
+| `aws-debug` | Log debug information coming from the AWS SDK library | `false` |
+| `pretty-print` | Pretty print the resulting CloudFormation | `false` |
+| `s3-uri` | When your template is bigger than the [CloudFormation limit of 51,200 bytes](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cloudformation-limits.html), kube-aws needs to upload the template to S3 to perform the deploy. The S3 location expressed as `s3://<bucket>/path/to/dir`. Multiple clusters can use the same S3 bucket. | none |
+| `skip-wait` | Do not wait for the cluster components be ready before the CLI exits | `false` |
 
 ## `update` example
 
