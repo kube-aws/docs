@@ -1,5 +1,7 @@
 # CLI Reference
 
+[AWS credentials](aws-credentials.md) need to be configured for commands that run against your AWS account.
+
 # `init`
 
 Initialize the base configuration for a cluster ready for customization prior to deployment.
