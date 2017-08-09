@@ -102,7 +102,7 @@ $ kube-aws up \
 
 # `update`
 
-Update an existing Kubernetes cluster.
+Update an existing Kubernetes cluster that was created by kube-aws.
 
 | Flag | Description | Default |
 | -- | -- | -- |
@@ -119,3 +119,15 @@ $ kube-aws update \
 ```
 
 # `destroy`
+
+Destroy an existing Kubernetes cluster that was created by kube-aws.
+
+| Flag | Description | Default |
+| -- | -- | -- |
+| `aws-debug` | Log debug information coming from the AWS SDK library | `false` |
+
+## `destroy` example
+
+```bash
+$ kube-aws destory
+```
