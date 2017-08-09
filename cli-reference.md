@@ -39,7 +39,6 @@ kube-aws init \
 | `ca-key-path` | Path to pem-encoded CA RSA key | `./credentials/ca-key.pem` |
 | `generate-ca` | If generating credentials, generate root CA key and cert. **NOT RECOMMENDED FOR PRODUCTION USE** - use `-ca-key-path` and `-ca-cert-path` options to provide your own certificate authority assets. | `false` |
 
-	cmdRenderCredentials.Flags().StringVar(&renderCredentialsOpts.CaKeyPath, "ca-key-path", "./credentials/ca-key.pem", "path to pem-encoded CA RSA	
 ## `render credentials` example
 
 ```bash
