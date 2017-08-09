@@ -11,7 +11,7 @@
   * [Step 6: Configure Add-ons](getting-started/step-6-configure-add-ons.md)
   * [Step 7: Destroy](getting-started/step-7-destroy.md)
 * [Getting In Touch](getting-in-touch.md)
-* [CLI Reference](cli-reference.md)
+* [CLI Reference](cli-reference/README.md)
   * [AWS Credentials](cli-reference/aws-credentials.md)
 * [Add-ons](add-ons/README.md)
   * [Cluster Resource Backup to AWS S3](add-ons/cluster-resource-backup-to-s3.md)
