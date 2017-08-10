@@ -2,7 +2,7 @@
 
 Configure your local workstation with AWS credentials using one of the following methods.
 
-## `configure` command
+## Method 1: `configure` command
 
 Provide the values of your AWS access and secret keys, and optionally default region and output format:
 
@@ -14,7 +14,7 @@ Default region name [None]: us-west-1
 Default output format [None]: text
 ```
 
-## Environment Variables
+## Method 2: Environment Variables
 
 Provide AWS credentials to kube-aws by exporting the following environment variables:
 
