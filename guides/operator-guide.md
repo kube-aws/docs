@@ -1,3 +1,0 @@
-# Operator Guide
-
-Coming soon.
